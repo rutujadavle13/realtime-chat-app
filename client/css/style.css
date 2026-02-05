@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Common Card ---------- */
+.card {
+  background: #fff;
+  width: 360px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+/* ---------- Inputs ---------- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ---------- Buttons ---------- */
+button {
+  width: 20%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+/* ---------- Chat Layout ---------- */
+.chat-container {
+  width: 420px;
+  height: 620px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#chat {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Messages ---------- */
+.message {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  max-width: 75%;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.system {
+  align-self: center;
+  background: #e0e0e0;
+}
+
+.user {
+  align-self: flex-start;
+  background: #d1e7ff;
+}
+
+.me {
+  align-self: flex-end;
+  background: #c8f7c5;
+}
+
+/* ---------- Input Area ---------- */
+.input-area {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  align-items: center;
+}
+
+/* File input  */
+.input-area input[type="file"] {
+  flex: 0.8;
+  font-size: 12px;
+}
+
+.input-area input[type="text"] {
+  flex: 2.5;
+}
+
+.input-area button {
+  flex: 0.7;
+}
